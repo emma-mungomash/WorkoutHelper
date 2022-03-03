@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B58D2C8927AB5C2D00DB12B2 /* WorkoutIntervalTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2C8827AB5C2D00DB12B2 /* WorkoutIntervalTimerApp.swift */; };
-		B58D2C8B27AB5C2D00DB12B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2C8A27AB5C2D00DB12B2 /* ContentView.swift */; };
+		B58D2C8927AB5C2D00DB12B2 /* WorkoutHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2C8827AB5C2D00DB12B2 /* WorkoutHelperApp.swift */; };
 		B58D2C8D27AB5C2F00DB12B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58D2C8C27AB5C2F00DB12B2 /* Assets.xcassets */; };
 		B58D2C9027AB5C2F00DB12B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58D2C8F27AB5C2F00DB12B2 /* Preview Assets.xcassets */; };
 		B58D2C9A27AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2C9927AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.swift */; };
 		B58D2CA427AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CA327AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.swift */; };
 		B58D2CA627AB5C2F00DB12B2 /* WorkoutIntervalTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CA527AB5C2F00DB12B2 /* WorkoutIntervalTimerUITestsLaunchTests.swift */; };
+		B58D2CB327AB5C9E00DB12B2 /* HomeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CB227AB5C9E00DB12B2 /* HomeGrid.swift */; };
+		B58D2CB527AB603400DB12B2 /* WorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CB427AB603400DB12B2 /* WorkoutPlan.swift */; };
+		B58D2CB727AB6D4600DB12B2 /* NewWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CB627AB6D4600DB12B2 /* NewWorkout.swift */; };
+		B58D2CB927AB768800DB12B2 /* NewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CB827AB768800DB12B2 /* NewExercise.swift */; };
+		B58D2CBF27ACA8AF00DB12B2 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CBE27ACA8AF00DB12B2 /* WorkoutViewModel.swift */; };
+		B58D2CC127ACB4D300DB12B2 /* WorkoutNamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CC027ACB4D300DB12B2 /* WorkoutNamePicker.swift */; };
+		B58D2CD327B76D7E00DB12B2 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CD227B76D7E00DB12B2 /* WorkoutSession.swift */; };
+		B58D2CD527B787E200DB12B2 /* AllExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D2CD427B787E200DB12B2 /* AllExercises.swift */; };
+		B5902E1327C9954F00488A2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5902E1227C9954F00488A2B /* GoogleService-Info.plist */; };
+		B5902E1627C9968500488A2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B5902E1527C9968500488A2B /* FirebaseAnalytics */; };
+		B5902E1827C9968500488A2B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B5902E1727C9968500488A2B /* FirebaseAuth */; };
+		B5902E1A27C9968500488A2B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B5902E1927C9968500488A2B /* FirebaseFirestore */; };
+		B5902E1C27C996EB00488A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902E1B27C996EB00488A2B /* AppDelegate.swift */; };
+		B593C51627CED18900D6327C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593C51527CED18900D6327C /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +47,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B58D2C8527AB5C2D00DB12B2 /* WorkoutIntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutIntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58D2C8827AB5C2D00DB12B2 /* WorkoutIntervalTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalTimerApp.swift; sourceTree = "<group>"; };
-		B58D2C8A27AB5C2D00DB12B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B58D2C8527AB5C2D00DB12B2 /* Workout Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58D2C8827AB5C2D00DB12B2 /* WorkoutHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHelperApp.swift; sourceTree = "<group>"; };
 		B58D2C8C27AB5C2F00DB12B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58D2C8F27AB5C2F00DB12B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B58D2C9527AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutIntervalTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58D2C9527AB5C2F00DB12B2 /* WorkoutHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58D2C9927AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalTimerTests.swift; sourceTree = "<group>"; };
-		B58D2C9F27AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutIntervalTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58D2C9F27AB5C2F00DB12B2 /* WorkoutHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58D2CA327AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalTimerUITests.swift; sourceTree = "<group>"; };
 		B58D2CA527AB5C2F00DB12B2 /* WorkoutIntervalTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B58D2CB227AB5C9E00DB12B2 /* HomeGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGrid.swift; sourceTree = "<group>"; };
+		B58D2CB427AB603400DB12B2 /* WorkoutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlan.swift; sourceTree = "<group>"; };
+		B58D2CB627AB6D4600DB12B2 /* NewWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkout.swift; sourceTree = "<group>"; };
+		B58D2CB827AB768800DB12B2 /* NewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExercise.swift; sourceTree = "<group>"; };
+		B58D2CBE27ACA8AF00DB12B2 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		B58D2CC027ACB4D300DB12B2 /* WorkoutNamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutNamePicker.swift; sourceTree = "<group>"; };
+		B58D2CD227B76D7E00DB12B2 /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		B58D2CD427B787E200DB12B2 /* AllExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExercises.swift; sourceTree = "<group>"; };
+		B5902E1227C9954F00488A2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5902E1B27C996EB00488A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B593C51527CED18900D6327C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5902E1627C9968500488A2B /* FirebaseAnalytics in Frameworks */,
+				B5902E1827C9968500488A2B /* FirebaseAuth in Frameworks */,
+				B5902E1A27C9968500488A2B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +100,7 @@
 		B58D2C7C27AB5C2D00DB12B2 = {
 			isa = PBXGroup;
 			children = (
-				B58D2C8727AB5C2D00DB12B2 /* WorkoutIntervalTimer */,
+				B58D2C8727AB5C2D00DB12B2 /* WorkoutHelper */,
 				B58D2C9827AB5C2F00DB12B2 /* WorkoutIntervalTimerTests */,
 				B58D2CA227AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests */,
 				B58D2C8627AB5C2D00DB12B2 /* Products */,
@@ -84,22 +110,32 @@
 		B58D2C8627AB5C2D00DB12B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B58D2C8527AB5C2D00DB12B2 /* WorkoutIntervalTimer.app */,
-				B58D2C9527AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.xctest */,
-				B58D2C9F27AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.xctest */,
+				B58D2C8527AB5C2D00DB12B2 /* Workout Helper.app */,
+				B58D2C9527AB5C2F00DB12B2 /* WorkoutHelperTests.xctest */,
+				B58D2C9F27AB5C2F00DB12B2 /* WorkoutHelperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B58D2C8727AB5C2D00DB12B2 /* WorkoutIntervalTimer */ = {
+		B58D2C8727AB5C2D00DB12B2 /* WorkoutHelper */ = {
 			isa = PBXGroup;
 			children = (
-				B58D2C8827AB5C2D00DB12B2 /* WorkoutIntervalTimerApp.swift */,
-				B58D2C8A27AB5C2D00DB12B2 /* ContentView.swift */,
+				B58D2C8827AB5C2D00DB12B2 /* WorkoutHelperApp.swift */,
 				B58D2C8C27AB5C2F00DB12B2 /* Assets.xcassets */,
 				B58D2C8E27AB5C2F00DB12B2 /* Preview Content */,
+				B58D2CB227AB5C9E00DB12B2 /* HomeGrid.swift */,
+				B58D2CB427AB603400DB12B2 /* WorkoutPlan.swift */,
+				B58D2CBE27ACA8AF00DB12B2 /* WorkoutViewModel.swift */,
+				B58D2CB627AB6D4600DB12B2 /* NewWorkout.swift */,
+				B58D2CC027ACB4D300DB12B2 /* WorkoutNamePicker.swift */,
+				B58D2CB827AB768800DB12B2 /* NewExercise.swift */,
+				B58D2CD227B76D7E00DB12B2 /* WorkoutSession.swift */,
+				B58D2CD427B787E200DB12B2 /* AllExercises.swift */,
+				B5902E1227C9954F00488A2B /* GoogleService-Info.plist */,
+				B5902E1B27C996EB00488A2B /* AppDelegate.swift */,
+				B593C51527CED18900D6327C /* LoginView.swift */,
 			);
-			path = WorkoutIntervalTimer;
+			path = WorkoutHelper;
 			sourceTree = "<group>";
 		};
 		B58D2C8E27AB5C2F00DB12B2 /* Preview Content */ = {
@@ -130,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B58D2C8427AB5C2D00DB12B2 /* WorkoutIntervalTimer */ = {
+		B58D2C8427AB5C2D00DB12B2 /* WorkoutHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B58D2CA927AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimer" */;
+			buildConfigurationList = B58D2CA927AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelper" */;
 			buildPhases = (
 				B58D2C8127AB5C2D00DB12B2 /* Sources */,
 				B58D2C8227AB5C2D00DB12B2 /* Frameworks */,
@@ -142,14 +178,19 @@
 			);
 			dependencies = (
 			);
-			name = WorkoutIntervalTimer;
+			name = WorkoutHelper;
+			packageProductDependencies = (
+				B5902E1527C9968500488A2B /* FirebaseAnalytics */,
+				B5902E1727C9968500488A2B /* FirebaseAuth */,
+				B5902E1927C9968500488A2B /* FirebaseFirestore */,
+			);
 			productName = WorkoutIntervalTimer;
-			productReference = B58D2C8527AB5C2D00DB12B2 /* WorkoutIntervalTimer.app */;
+			productReference = B58D2C8527AB5C2D00DB12B2 /* Workout Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B58D2C9427AB5C2F00DB12B2 /* WorkoutIntervalTimerTests */ = {
+		B58D2C9427AB5C2F00DB12B2 /* WorkoutHelperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B58D2CAC27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimerTests" */;
+			buildConfigurationList = B58D2CAC27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelperTests" */;
 			buildPhases = (
 				B58D2C9127AB5C2F00DB12B2 /* Sources */,
 				B58D2C9227AB5C2F00DB12B2 /* Frameworks */,
@@ -160,14 +201,14 @@
 			dependencies = (
 				B58D2C9727AB5C2F00DB12B2 /* PBXTargetDependency */,
 			);
-			name = WorkoutIntervalTimerTests;
+			name = WorkoutHelperTests;
 			productName = WorkoutIntervalTimerTests;
-			productReference = B58D2C9527AB5C2F00DB12B2 /* WorkoutIntervalTimerTests.xctest */;
+			productReference = B58D2C9527AB5C2F00DB12B2 /* WorkoutHelperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B58D2C9E27AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests */ = {
+		B58D2C9E27AB5C2F00DB12B2 /* WorkoutHelperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B58D2CAF27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimerUITests" */;
+			buildConfigurationList = B58D2CAF27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelperUITests" */;
 			buildPhases = (
 				B58D2C9B27AB5C2F00DB12B2 /* Sources */,
 				B58D2C9C27AB5C2F00DB12B2 /* Frameworks */,
@@ -178,9 +219,9 @@
 			dependencies = (
 				B58D2CA127AB5C2F00DB12B2 /* PBXTargetDependency */,
 			);
-			name = WorkoutIntervalTimerUITests;
+			name = WorkoutHelperUITests;
 			productName = WorkoutIntervalTimerUITests;
-			productReference = B58D2C9F27AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests.xctest */;
+			productReference = B58D2C9F27AB5C2F00DB12B2 /* WorkoutHelperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B58D2C8027AB5C2D00DB12B2 /* Build configuration list for PBXProject "WorkoutIntervalTimer" */;
+			buildConfigurationList = B58D2C8027AB5C2D00DB12B2 /* Build configuration list for PBXProject "WorkoutHelper" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,13 +256,16 @@
 				Base,
 			);
 			mainGroup = B58D2C7C27AB5C2D00DB12B2;
+			packageReferences = (
+				B5902E1427C9968500488A2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B58D2C8627AB5C2D00DB12B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B58D2C8427AB5C2D00DB12B2 /* WorkoutIntervalTimer */,
-				B58D2C9427AB5C2F00DB12B2 /* WorkoutIntervalTimerTests */,
-				B58D2C9E27AB5C2F00DB12B2 /* WorkoutIntervalTimerUITests */,
+				B58D2C8427AB5C2D00DB12B2 /* WorkoutHelper */,
+				B58D2C9427AB5C2F00DB12B2 /* WorkoutHelperTests */,
+				B58D2C9E27AB5C2F00DB12B2 /* WorkoutHelperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +277,7 @@
 			files = (
 				B58D2C9027AB5C2F00DB12B2 /* Preview Assets.xcassets in Resources */,
 				B58D2C8D27AB5C2F00DB12B2 /* Assets.xcassets in Resources */,
+				B5902E1327C9954F00488A2B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +302,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58D2C8B27AB5C2D00DB12B2 /* ContentView.swift in Sources */,
-				B58D2C8927AB5C2D00DB12B2 /* WorkoutIntervalTimerApp.swift in Sources */,
+				B58D2CD527B787E200DB12B2 /* AllExercises.swift in Sources */,
+				B58D2CB927AB768800DB12B2 /* NewExercise.swift in Sources */,
+				B58D2CB727AB6D4600DB12B2 /* NewWorkout.swift in Sources */,
+				B58D2CC127ACB4D300DB12B2 /* WorkoutNamePicker.swift in Sources */,
+				B58D2C8927AB5C2D00DB12B2 /* WorkoutHelperApp.swift in Sources */,
+				B58D2CB527AB603400DB12B2 /* WorkoutPlan.swift in Sources */,
+				B58D2CB327AB5C9E00DB12B2 /* HomeGrid.swift in Sources */,
+				B58D2CD327B76D7E00DB12B2 /* WorkoutSession.swift in Sources */,
+				B593C51627CED18900D6327C /* LoginView.swift in Sources */,
+				B5902E1C27C996EB00488A2B /* AppDelegate.swift in Sources */,
+				B58D2CBF27ACA8AF00DB12B2 /* WorkoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +338,12 @@
 /* Begin PBXTargetDependency section */
 		B58D2C9727AB5C2F00DB12B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B58D2C8427AB5C2D00DB12B2 /* WorkoutIntervalTimer */;
+			target = B58D2C8427AB5C2D00DB12B2 /* WorkoutHelper */;
 			targetProxy = B58D2C9627AB5C2F00DB12B2 /* PBXContainerItemProxy */;
 		};
 		B58D2CA127AB5C2F00DB12B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B58D2C8427AB5C2D00DB12B2 /* WorkoutIntervalTimer */;
+			target = B58D2C8427AB5C2D00DB12B2 /* WorkoutHelper */;
 			targetProxy = B58D2CA027AB5C2F00DB12B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,7 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutIntervalTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorkoutHelper/Preview Content\"";
 				DEVELOPMENT_TEAM = X2TN44L284;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -427,13 +481,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmung.WorkoutIntervalTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mungomash.WorkoutHelper;
+				PRODUCT_NAME = "Workout Helper";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutIntervalTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorkoutHelper/Preview Content\"";
 				DEVELOPMENT_TEAM = X2TN44L284;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -456,13 +511,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmung.WorkoutIntervalTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mungomash.WorkoutHelper;
+				PRODUCT_NAME = "Workout Helper";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +541,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutIntervalTimer.app/WorkoutIntervalTimer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutHelper.app/WorkoutHelper";
 			};
 			name = Debug;
 		};
@@ -505,7 +561,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutIntervalTimer.app/WorkoutIntervalTimer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutHelper.app/WorkoutHelper";
 			};
 			name = Release;
 		};
@@ -548,7 +604,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B58D2C8027AB5C2D00DB12B2 /* Build configuration list for PBXProject "WorkoutIntervalTimer" */ = {
+		B58D2C8027AB5C2D00DB12B2 /* Build configuration list for PBXProject "WorkoutHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B58D2CA727AB5C2F00DB12B2 /* Debug */,
@@ -557,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B58D2CA927AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimer" */ = {
+		B58D2CA927AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B58D2CAA27AB5C2F00DB12B2 /* Debug */,
@@ -566,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B58D2CAC27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimerTests" */ = {
+		B58D2CAC27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B58D2CAD27AB5C2F00DB12B2 /* Debug */,
@@ -575,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B58D2CAF27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutIntervalTimerUITests" */ = {
+		B58D2CAF27AB5C2F00DB12B2 /* Build configuration list for PBXNativeTarget "WorkoutHelperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B58D2CB027AB5C2F00DB12B2 /* Debug */,
@@ -585,6 +641,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5902E1427C9968500488A2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5902E1527C9968500488A2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5902E1427C9968500488A2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B5902E1727C9968500488A2B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5902E1427C9968500488A2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B5902E1927C9968500488A2B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5902E1427C9968500488A2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B58D2C7D27AB5C2D00DB12B2 /* Project object */;
 }

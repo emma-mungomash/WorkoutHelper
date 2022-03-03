@@ -1,13 +1,13 @@
 //
-//  WorkoutIntervalTimerUITests.swift
-//  WorkoutIntervalTimerUITests
+//  WorkoutHelperUITests.swift
+//  WorkoutHelperUITests
 //
 //  Created by Emma Dalton on 2/2/22.
 //
 
 import XCTest
 
-class WorkoutIntervalTimerUITests: XCTestCase {
+class WorkoutHelperUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

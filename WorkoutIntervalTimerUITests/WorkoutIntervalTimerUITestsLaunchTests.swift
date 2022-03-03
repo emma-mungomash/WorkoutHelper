@@ -1,13 +1,13 @@
 //
-//  WorkoutIntervalTimerUITestsLaunchTests.swift
-//  WorkoutIntervalTimerUITests
+//  WorkoutHelperUITestsLaunchTests.swift
+//  WorkoutHelperUITests
 //
 //  Created by Emma Dalton on 2/2/22.
 //
 
 import XCTest
 
-class WorkoutIntervalTimerUITestsLaunchTests: XCTestCase {
+class WorkoutHelperUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
