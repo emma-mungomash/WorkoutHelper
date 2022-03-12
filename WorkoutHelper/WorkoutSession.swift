@@ -5,24 +5,24 @@ struct WorkoutSession: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     let formatter = DateComponentsFormatter()
     
-    var workout: Workouts
+    var workout: Workout
     @State var exerciseCount: Int
     @State var time: TimeInterval
     @State var preparation: TimeInterval
     @Binding var dismissSheet: Bool
     
-    init(workout: Workouts, dismissSheet: Binding<Bool>) {
+    init(workout: Workout, dismissSheet: Binding<Bool>) {
         self.workout = workout
         self._exerciseCount = State(initialValue: 0)
         self._dismissSheet = dismissSheet
-        self._time = State(initialValue: workout.exerciseGroup[0].exercise[0].time)
-        self._preparation = State(initialValue: workout.exerciseGroup[0].exercise[0].preparation)
+        self._time = State(initialValue: (workout.exercises[0].time ?? 0.0)/1000)
+        self._preparation = State(initialValue: (workout.exercises[0].preparation ?? 0.0)/1000)
     }
     
     var body: some View {
         VStack {
-            if workout.exerciseGroup[0].exercise.count > exerciseCount {
-                Text(workout.exerciseGroup[0].exercise[exerciseCount].name).font(.system(size: 50, weight: .bold, design: .default))
+            if workout.exercises.count > exerciseCount {
+                Text(workout.exercises[exerciseCount].name).font(.system(size: 50, weight: .bold, design: .default))
                 Text(preparation >= 0 ? "Prepare: \(formatter.string(from: preparation)!)" : "Go: \(formatter.string(from: time)!)").font(.system(size: 50, weight: .bold, design: .default))
                     .foregroundColor(preparation >= 0 ? Color.red : Color.green)
             } else {
@@ -46,9 +46,9 @@ struct WorkoutSession: View {
             }
         }
         .onChange(of: exerciseCount) { newValue in
-            if workout.exerciseGroup[0].exercise.count > exerciseCount {
-                time = workout.exerciseGroup[0].exercise[exerciseCount].time
-                preparation = workout.exerciseGroup[0].exercise[exerciseCount].preparation
+            if workout.exercises.count > exerciseCount {
+                time = workout.exercises[exerciseCount].time ?? 0.0
+                preparation = workout.exercises[exerciseCount].preparation ?? 0.0
             }
         }
     }

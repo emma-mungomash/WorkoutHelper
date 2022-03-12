@@ -13,9 +13,9 @@ struct AllExercises: View {
                     HStack {
                         Text(exercise.name)
                         Spacer()
-                        Text("\(formatter.string(from: exercise.time)!)")
+                        Text("\(formatter.string(from: exercise.time ?? 0.0)!)")
                     }
-                    Text("Preparation: \(formatter.string(from: exercise.preparation)!)")
+                    Text("Preparation: \(formatter.string(from: exercise.preparation ?? 0.0)!)")
                 }.padding(16)
             }.onDelete(perform: delete)
         }

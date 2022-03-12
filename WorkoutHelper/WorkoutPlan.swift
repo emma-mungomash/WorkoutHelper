@@ -2,7 +2,7 @@ import SwiftUI
 
 struct WorkoutPlan: View {
     
-    var workout: Workouts
+    var workout: Workout
     
     let formatter = DateComponentsFormatter()
     
@@ -12,19 +12,15 @@ struct WorkoutPlan: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             List(selection: $singleSelection){
-                ForEach(workout.exerciseGroup) { exerciseGroup in
-                    Section(header: Text(exerciseGroup.name)) {
-                        ForEach(exerciseGroup.exercise) { exercise in
-                            VStack(alignment: .leading, spacing: 16) {
-                                HStack {
-                                    Text(exercise.name)
-                                    Spacer()
-                                    Text("\(formatter.string(from: exercise.time)!)")
-                                }
-                                Text("Preparation: \(formatter.string(from: exercise.preparation)!)")
-                            }.padding(16)
+                ForEach(workout.exercises) { exercise in
+                    VStack(alignment: .leading, spacing: 16) {
+                        HStack {
+                            Text(exercise.name)
+                            Spacer()
+                            Text("\(formatter.string(from: exercise.time ?? 0.0)!)")
                         }
-                    }
+                        Text("Preparation: \(formatter.string(from: exercise.preparation ?? 0.0)!)")
+                    }.padding(16)
                 }
             }
             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100, alignment: .top)

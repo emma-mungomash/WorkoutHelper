@@ -18,7 +18,6 @@ struct WorkoutHelperApp: App {
                 if viewModel.signIn {
                     TabView {
                         HomeGrid()
-                            .onAppear(perform: run)
                             .tabItem {
                                 Label("Menu", systemImage: "list.dash")
                             }
@@ -29,21 +28,11 @@ struct WorkoutHelperApp: App {
                     }.environmentObject(viewModel)
                 } else {
                     LoginView()
+                        .environmentObject(viewModel)
                 }
             }
         }
     }
     
-    func run() {
-        let db: Firestore = Firestore.firestore()
-        db.collection("workouts").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-                    }
-                }
-        }
-    }
+    
 }

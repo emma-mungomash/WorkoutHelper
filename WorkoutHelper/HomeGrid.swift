@@ -11,17 +11,10 @@ struct HomeGrid: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(viewModel.workouts) { workout in
-                         NavigationLink(destination: WorkoutPlan(workout: workout)) {
+                         NavigationLink(destination: WorkoutPlan(workout: workout)
+                                            .environmentObject(viewModel)) {
                              VStack {
-                                 Text(workout.name).font(.system(size: 30, weight: .bold, design: .default))
-                                 Spacer()
-                                 ForEach(workout.exerciseGroup) { exerciseGroup in
-                                     Text(exerciseGroup.name).font(.system(size: 20, weight: .bold, design: .default))
-                                     Spacer()
-                                     ForEach(exerciseGroup.exercise) { exercise in
-                                         Text(exercise.name).font(.system(size: 12, weight: .bold, design: .default))
-                                     }
-                                 }
+                                 Text(workout.name).font(.system(size: 25, weight: .bold, design: .default))
                              }
                              .padding(16)
                              .foregroundColor(Color.white)
@@ -30,7 +23,8 @@ struct HomeGrid: View {
                              .cornerRadius(20)
                          }
                      }
-                    NavigationLink(destination: NewWorkout(workouts: $viewModel.workouts)) {
+                    NavigationLink(destination: NewWorkout(workouts: $viewModel.workouts)
+                                    .environmentObject(viewModel)) {
                          Text("+")
                              .foregroundColor(Color.white)
                              .frame(width: UIScreen.main.bounds.width/2 - 32, height: UIScreen.main.bounds.width/2 - 32)

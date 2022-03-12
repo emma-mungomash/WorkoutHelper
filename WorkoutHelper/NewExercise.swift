@@ -4,11 +4,13 @@ struct NewExercise: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @EnvironmentObject var viewModel: WorkoutViewModel
+    
     let formatter = DateComponentsFormatter()
     
-    @Binding var exercises: [Exercises]
-    @State var time: Double = 4.0
-    @State var preparation: Double = 4.0
+    @Binding var exercises: [Exercise]
+    @State var time: Int = 4
+    @State var preparation: Int = 4
     @State var pickName = false
     @State var pickTime = false
     @State var pickPreparation = false
@@ -101,7 +103,8 @@ struct NewExercise: View {
     }
     
     func onTap() {
-        exercises.append(Exercises(name: name, time: time, preparation: preparation))
+        let key = viewModel.addExercise(name: name, duration: time*1000, prepDuration: preparation*1000)
+        exercises.append(Exercise(name: name, key: key, time: TimeInterval(time), preparation: TimeInterval(preparation)))
         self.presentationMode.wrappedValue.dismiss()
     }
     
